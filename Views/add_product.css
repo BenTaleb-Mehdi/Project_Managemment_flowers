@@ -1,0 +1,217 @@
+.content nav {
+  padding: 10px;
+}
+
+.messageWelcome h2 {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+}
+.navorders {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.navorders h3 {
+  color: rgb(3, 134, 29);
+}
+
+
+
+.group_inputs {
+  width: 100%;
+  padding: 20px;
+}
+
+.upImg {
+  min-height: 150px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.info i {
+  font-size: 25px;
+}
+
+.inputs {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  gap: 10px;
+}
+
+.input {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.input input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.119);
+  outline: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: border 0.1s;
+}
+.input input:focus {
+  border: 2px solid rgb(46, 173, 0);
+}
+.des {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+textarea {
+  width: 100%;
+  min-height: 130px;
+  padding: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.119);
+  outline: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: border 0.1s;
+}
+
+.des textarea:focus {
+  border: 2px solid rgb(46, 173, 0);
+}
+.btn_add {
+  padding: 8px 15px;
+  color: white;
+  background-color: rgb(46, 173, 0);
+  border: 1px solid transparent;
+  outline: 0;
+  transform: scale(0.99);
+  transition: 0.4s;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 5px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.btn_add:hover {
+  background-color: rgb(0, 120, 2);
+  transform: scale(0.95);
+}
+
+
+
+
+
+.btnSelect {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #e9e8e8;
+  padding: 7px;
+  display: none;
+  z-index: 10;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  width: 100%;
+  color: rgb(16, 16, 16);
+  gap: 2px;
+  overflow-y: scroll;
+  max-height: 220px;
+}
+
+.options.active {
+  display: block;
+}
+.options::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.options::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.options::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.option {
+  padding: 7px;
+  border-bottom: 1px solid rgba(220, 220, 220, 0.123);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+}
+  
+
+.option:hover{
+  background-color: rgb(226, 225, 225);
+}
+.option img {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+
+.option .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.option .info h2 {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  color: rgb(7, 7, 7);
+}
+
+.option .info span {
+  font-size: 14px;
+  color: #17a202;
+}
+.btnSelect button {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  color: rgb(0, 0, 0);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border: 2px solid rgba(0, 0, 0, 0.119);
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: border 0.1s;
+}
+
+.btnSelect button:focus {
+  border: 2px solid rgb(46, 173, 0);
+}

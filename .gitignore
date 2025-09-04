@@ -1,0 +1,38 @@
+# إعدادات النظام
+.DS_Store
+Thumbs.db
+
+# إعدادات VS Code
+.vscode/
+
+# إعدادات JetBrains / PHPStorm
+.idea/
+
+# مكتبات PHP Composer
+vendor/
+
+# مكتبات Node.js
+node_modules/
+
+# ملفات قاعدة البيانات
+*.sql
+*.sqlite
+*.db
+
+# ملفات البيئة (معلومات حساسة)
+.env
+
+# ملفات الأخطاء
+*.log
+
+# ملفات الكاش
+cache/
+*.cache
+*.tmp
+*.swp
+
+# صور/ملفات تجريبية (إلا بغيتي تمنعهم)
+*.png
+*.jpg
+*.jpeg
+*.gif

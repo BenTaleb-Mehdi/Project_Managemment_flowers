@@ -1,0 +1,190 @@
+.content nav {
+  padding: 10px;
+}
+
+.messageWelcome h2 {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.messageWelcome p {
+  padding: 5px;
+}
+.navorders {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.navorders h3 {
+  color: rgb(3, 3, 134);
+}
+.content {
+  overflow-y: scroll;
+  height: auto;
+}
+.statics {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: stretch;
+}
+.statics p,.anlyses-pro p{
+  padding: 10px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.statics i,.anlyses-pro i{
+  font-size: 20px;
+  color: rgb(7, 168, 7);
+
+}
+.chart-status {
+  flex: 7; /* 70% width */
+  border-radius: 15px;
+ padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+#chart {
+  flex: 1; /* chart fills remaining space */
+  border-radius: 15px;
+  border: 1px solid gainsboro;
+   padding: 10px;
+}
+.analyses-boxes {
+  flex: 3; /* 30% width */
+  display: flex;
+  flex-direction: column;
+
+}
+.boxes {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid gainsboro;
+  border-radius: 15px;
+  padding: 10px;
+  height: 100%;
+}
+
+.box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid transparent;
+  width: 100%;
+}
+.icon-box i {
+  font-size: 25px;
+  color: rgb(2, 131, 2);
+  font-weight: 300;
+}
+.icon-box {
+  background-color: rgb(220, 251, 210);
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(8, 182, 8);
+  display: flex;
+  align-items: center;
+}
+.static-box h2 {
+  color: rgb(45, 45, 45);
+}
+.static-box span {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 6px;
+}
+
+.static-box p {
+  display: flex;
+  align-items: flex-end;
+  font-size: 14px;
+  font-weight: 500;
+  gap: 3px;
+  color: rgb(4, 169, 4);
+
+}
+
+.anlyses-pro {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  align-items: stretch;
+  height: auto;
+}
+.analyses-sellings{
+  display: flex;
+  flex: 7;
+  flex-direction: column;
+}
+.content-toporders {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  height: 100%;
+  width: 100%;
+}
+.best-selling {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid gainsboro;
+  border-radius: 15px;
+  width: 100%;
+
+}
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.info img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.info h3 {
+  color: black;
+}
+
+.icon {
+  background-color: rgb(205, 251, 205);
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.icon span {
+  color: rgb(3, 107, 3);
+  font-weight: 500;
+}
+
+.anlyses-pro .chart {
+  flex-direction: column;
+    flex: 3;
+  display: flex;
+  justify-content: center;
+}
+
+#chart2{
+  padding: 0px;
+  border: 1px solid gainsboro;
+  border-radius: 15px;
+}

@@ -1,0 +1,95 @@
+.content nav {
+  padding: 10px;
+}
+
+.messageWelcome h2 {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+}
+.navorders {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.navorders h3 {
+  color: rgb(3, 134, 29);
+}
+.invoice_nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
+  margin-bottom: 50px;
+}
+.invoice {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 15px 40px;
+  margin-bottom: 30px;
+}
+
+.info h1 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.info img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.table {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 40px;
+}
+.table-wrapper {
+  width: 100%;
+  max-height: 500px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+table {
+  border-collapse: collapse;
+  min-width: 400px;
+  width: 100%;
+}
+
+/* Scrollbar styles on .table-wrapper */
+.table-wrapper::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: rgb(0, 162, 0);
+  border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: rgb(1, 110, 1);
+}
+th,
+td {
+  padding: 13px 30px;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  border-bottom: 1px solid black;
+}
+
+td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.148);
+}

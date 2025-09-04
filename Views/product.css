@@ -1,0 +1,325 @@
+.content nav {
+  padding: 10px;
+}
+
+.messageWelcome h2 {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+}
+.navorders {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.navorders h3 {
+  color: rgb(3, 134, 29);
+}
+
+.table {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.table-wrapper {
+  width: 100%;
+  max-height: 500px; /* or whatever height you want */
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+table {
+  border-collapse: collapse;
+  min-width: 400px;
+  width: 100%;
+}
+
+/* Scrollbar styles on .table-wrapper */
+.table-wrapper::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: rgb(0, 162, 0);
+  border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: rgb(1, 110, 1);
+}
+th,
+td {
+  padding: 13px 40px;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  border-bottom: 1px solid black;
+}
+
+td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.148);
+}
+td a {
+  text-decoration: none;
+}
+td .delete {
+  color: rgb(210, 6, 6);
+  font-size: 22px;
+}
+
+td .edit {
+  color: rgb(4, 178, 1);
+  font-size: 23px;
+}
+td img {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+.navorders a,
+.btns button {
+  text-decoration: none;
+  padding: 7px;
+  color: white;
+  background-color: rgb(0, 173, 3);
+  border: 1px solid transparent;
+  outline: 0;
+  transform: scale(0.99);
+  transition: 0.4s;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+.navorders a:hover,
+.btns button:hover {
+  background-color: rgb(8, 120, 0);
+  transform: scale(0.95);
+}
+
+.aleart_delete .btns button {
+  padding: 7px 10px;
+  outline: 0;
+  border: 1px solid transparent;
+  font-size: 12px;
+  border-radius: 5px;
+  transform: scale(0.99);
+  transition: 0.4s;
+  cursor: pointer;
+}
+.aleart_delete .btns button:hover {
+  transform: scale(0.95);
+}
+.aleart_delete {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: -150px;
+  left: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+  transition: 0.4s;
+  min-height: 150px;
+  width: 90%;
+  z-index: 1000;
+}
+.aleart_delete.active {
+  top: 15px;
+}
+.btns .yes {
+  background-color: rgb(0, 162, 0);
+  color: white;
+}
+.btns .yes:hover {
+  background-color: rgb(1, 110, 1);
+}
+.btns .no {
+  background-color: rgb(151, 0, 0);
+  color: white;
+}
+.btns .no:hover {
+  background-color: rgb(104, 0, 0);
+}
+.message p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.message i {
+  font-size: 20px;
+  color: rgb(236, 8, 8);
+  background-color: rgb(249, 193, 193);
+  padding: 5px;
+  border-radius: 5px;
+}
+.fillter {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: auto;
+}
+.btnAll {
+  width: 100%;
+}
+.btnAll a {
+  width: 100%;
+  padding: 8px;
+}
+.btnSelect {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+#submitBtn {
+  display: inline-flex; /* keep button inline but allow content to size */
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  min-width: 120px; /* optional minimum width */
+  transition: width 0.3s; /* smooth width change */
+  box-sizing: border-box;
+}
+#selectedProductName {
+  white-space: nowrap; /* prevent text from wrapping */
+}
+.options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: transparent;
+  padding: 0px;
+  display: none;
+  z-index: 10;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  min-width: 200px;
+  color: rgb(16, 16, 16);
+  gap: 2px;
+  overflow-y: scroll;
+  max-height: 220px;
+}
+
+.options.active {
+  display: block;
+}
+.options::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.options::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.options::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.option {
+  padding: 7px;
+  border-bottom: 1px solid rgba(220, 220, 220, 0.123);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.option:hover {
+  background-color: rgb(226, 225, 225);
+}
+.option img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.option .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.option .info h2 {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  color: rgb(35, 35, 35);
+}
+
+.option .info span {
+  font-size: 14px;
+  color: #17a202;
+}
+.btnSelect button {
+  padding: 12px;
+  outline: 0;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 173, 3);
+  border: 1px solid transparent;
+  outline: 0;
+  transform: scale(0.99);
+  transition: 0.4s;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  border-radius: 5px;
+  transition: border 0.1s;
+  width: 100%;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btns input {
+  padding: 7px;
+  outline: 0;
+  border: 1px solid transparent;
+  background-color: transparent;
+  min-width: 450px;
+}
+
+.search {
+  padding: 2px 6px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  border: 2px solid rgba(169, 168, 168, 0.512);
+  border-radius: 8px;
+}
+
+.search i {
+  margin-left: 5px;
+  font-weight: bold;
+  color: grey;
+}
+
+.search button i {
+  color: white;
+}
+.search button {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,108 @@
+.content nav {
+  padding: 10px;
+}
+
+.messageWelcome h2 {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.messageWelcome p {
+  padding: 5px;
+}
+.navorders {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.navorders h3 {
+  color: rgb(3, 3, 134);
+}
+
+.box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 23px 25px;
+  border-left: 3px solid rgb(3, 233, 3);
+  background-color: transparent;
+  width: 100%;
+}
+
+.boxese {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.info span {
+  display: flex;
+  align-items: flex-end;
+}
+
+.info span h1 {
+  font-size: 35px;
+  font-weight: 500;
+  color: black;
+}
+.info span p {
+  font-size: 13px;
+  color: rgb(102, 102, 102);
+  margin-left: 5px;
+}
+.info p {
+  font-weight: 400;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon i {
+  font-size: 18px;
+  color: rgb(1, 148, 1);
+}
+
+.icon {
+  background-color: rgb(185, 255, 185);
+  padding: 6px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.anlyses {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  gap: 20px;
+
+}
+
+.chart {
+  width: 100%;
+}
+
+.chart p{
+  margin-left: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chart p i{
+  font-size: 20px;
+  color: rgb(5, 202, 31);
+}

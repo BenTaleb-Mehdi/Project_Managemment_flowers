@@ -1,0 +1,175 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+/* أفضل ممارسات: system stack أولوية، fallback لRoboto/Inter */
+:root {
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif;
+}
+
+/* أو لو بتحمّل Inter من Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+
+body {
+  font-family: "Inter", var(--font-sans);
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+/* رؤوس */
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  line-height: 1.2;
+  color: aliceblue;
+}
+
+/* نص ثانوي/معلومات صغيرة */
+.small {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 5px;
+  width: 18%;
+  background-color: #050505;
+  height: 100vh;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.logo img {
+  width: 100px;
+}
+.managmment,
+.settings {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+.menu a {
+  text-decoration: none;
+  width: 100%;
+}
+.menu a button {
+  text-decoration: none;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  transition: background 0.3s ease;
+  color: aliceblue;
+  border-radius: 5px;
+}
+.menu button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.menu a i {
+  font-size: 20px;
+}
+.content {
+  padding: 25px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  border-radius: 25px 0px 0px 25px;
+}
+.content nav {
+  padding: 10px;
+}
+
+.messageWelcome h2 {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+}
+.messageWelcome p {
+  padding: 10px;
+}
+
+.navorders a,
+.btn_invoice button {
+  text-decoration: none;
+  padding: 7px;
+  color: white;
+  background-color: rgb(46, 173, 0);
+  border: 1px solid transparent;
+  outline: 0;
+  transform: scale(0.99);
+  transition: 0.4s;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+.navorders a:hover,
+.btn_invoice button:hover {
+  background-color: rgb(0, 120, 2);
+  transform: scale(0.95);
+}
+.flash-message {
+  position: fixed;
+  top: 20px;
+  left: -10px;
+  padding: 15px;
+  min-width: 50%;
+  font-weight: 400;
+  z-index: 9999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.flash-message i {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.flash-message.show {
+  left: 20px;
+  transform: translateX(0);
+}
+
+.error-message {
+  background-color: #ffe5e5;
+  color: #751409;
+  border: 1px solid transparent;
+}
+
+.success-message {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid transparent;
+}
